@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 
 function Slides({ slides }) {
-  // const [currentSlide, setCurrentSlide] = useState(slides[0]);
-  // const [slideNo, setSlideNo] = useState(0);
-  // const [first, setFirst] = useState(true);
-  // const [last, setLast] = useState(!!(slides.length === 1));
 
   const initialState = {
     currentSlide: slides[0],
@@ -12,6 +8,7 @@ function Slides({ slides }) {
     first: true,
     last: !!(slides.length === 1)
   };
+  
   const [slide, setSlide] = useState(initialState);
 
   const handleSlideChange = (action) => {
@@ -64,7 +61,6 @@ function Slides({ slides }) {
       </div>
     </div>
   );
-
 }
 
 export default Slides;
