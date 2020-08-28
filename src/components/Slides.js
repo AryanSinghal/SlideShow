@@ -53,7 +53,6 @@ function Slides({ slides }) {
 
   return (
     <div>
-      {console.log(slide)}
       <div id="navigation" className="text-center">
         <button data-testid="button-restart" className="small outlined" onClick={() => handleSlideChange('refresh')} disabled={slide.first} >Restart</button>
         <button data-testid="button-prev" className="small" onClick={() => handleSlideChange('prev')} disabled={slide.first} >Prev</button>
